@@ -1,0 +1,17 @@
+﻿<!-- Custom Counters #01 (by www.anyhs-themes.tumblr.com) -->
+<ul id="at-custom-counters-01">
+
+<li>
+... cole o código do seu contador aqui ...
+</li>
+
+<li>
+... cole o código do seu contador aqui ...
+</li>
+
+<li>
+... cole o código do seu contador aqui ...
+</li>
+    
+</ul><!-- #at-custom-counters-01 -->
+<!-- Custom Counters #01 (by www.anyhs-themes.tumblr.com) -->
