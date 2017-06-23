@@ -1,0 +1,294 @@
+﻿<!--
+ 
+            VITRINE PAGE #01
+            by Anyh Salinas - © 2016
+            www.anyhs-themes.tumblr.com
+ 
+ 
+ 
+  ♦ Don't remove/adulterate my credits;
+  ♦ Don't copy;
+  ♦ Don't redistribute;
+  ♦ Don't use this theme as base to make other(s) theme(s).
+   
+ 
+  CONTACT:
+  http://www.anyhs-themes.tumblr.com/contato
+ 
+ 
+ 
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>{Title}</title>
+    <link rel="shortcut icon" href="{Favicon}"/>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    
+<link href="https://fonts.googleapis.com/css?family=Abhaya Libre|Rajdhani|Baumans|Ubuntu|Roboto|Roboto Condensed|Share|Dosis" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster Two|Parisienne|Great Vibes|Rouge Script|Sacramento|Smythe|Megrim|Amatic SC|UnifrakturMaguntia" rel="stylesheet">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="http://static.tumblr.com/me5sfsd/12Qlmj66n/script.js"></script>
+
+<script type="text/javascript">
+$(window).load(function(){
+/** align posts **/
+var $wall = $('#caixas');
+$wall.imagesLoaded(function(){
+    $wall.masonry({
+    itemSelector: '.caixa',
+    isAnimated : true
+    });
+});
+/** align posts **/
+});
+</script>
+
+<style type="text/css">
+
+body {margin: 0px; font-family: 'Roboto', sans-serif; font-size: 12px;}
+::-webkit-scrollbar {width: 10px; height: 10px;}
+::-webkit-scrollbar-thumb {border: 4px solid;}
+
+h1, h2, h3 {margin: 0px; font-weight: normal;}
+
+a {text-decoration: none; color: #000;}
+
+/*** DON'T REMOVE THE CREDITS IF THE THEME ISN'T YOURS ***/
+#cred {z-index: 9999; font-family: 'Baumans', sans-serif; position: fixed; left: -92px; bottom: 100px; transition: .5s; text-transform: uppercase; font-size: 10px; padding: 5px;}
+
+#cred:hover {left: 0px;}
+
+/*** DON'T REMOVE THE CREDITS IF THE THEME ISN'T YOURS ***/
+
+
+#content {width: 1020px; margin: 40px auto;}
+
+#sidebar {width: 150px; border-top: none; border-left: none; border-bottom: none; text-align: right; padding: 10px; float: left; margin-top: 80px; position: fixed;}
+
+h1 {padding-right: 10px;}
+
+#desc {padding-right: 10px;}
+
+#menu {border-bottom: none; border-left: none; border-right: none; padding-top: 5px; font-family: 'Roboto Condensed', sans-serif; font-size: 10px; text-transform: uppercase; line-height: 10px; padding-right: 10px;}
+#menu i {font-size: 12px; margin-left: 4px;}
+#menu a {display: block; margin: 10px 0px; transition: .5s;}
+#menu a:hover {letter-spacing: 2px;}
+
+#caixas {width: 790px; margin-left: 200px;}
+
+.caixa {width: 200px; padding: 10px; border-radius: 5px; margin: 20px; float: left; transition: .5s;}
+.caixa img {max-width: 200px; margin: 10px auto; display: table; opacity: .6; transition: .5s;}
+.caixa:hover {transform: scale(1.3); z-index: 10;}
+.caixa:hover img {opacity: 1;}
+
+h2 {padding: 5px; padding-bottom: 1px; border-bottom: 1px solid; text-align: center;}
+
+.post_desc {padding: 5px; overflow-y: scroll; max-height: 30px;}
+
+.caixa_bot {text-align: center; font-family: 'Roboto Condensed', sans-serif; text-transform: uppercase; font-size: 12px; display: block; padding: 10px; transition: .5s;}
+.caixa_bot:hover {background: transparent; letter-spacing: 2px;}
+
+.bordas {border: 1px solid;}
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************************************************************************************************************************************************************************** início da PARTE PERSONALIZÁVEL DO CSS ************************************************************************************************************************************************************************************/
+
+
+
+.bg {
+    background: #eee; /** cor do fundo **/
+}
+
+.font {
+    font-family: 'Baumans'; /** fonte principal **/
+    color: #777; /** cor da fonte **/
+    font-size: 11px; /** tamanho da fonte **/
+}
+
+::-webkit-scrollbar {
+    background: #eee; /** cor do fundo da barra de rolagem **/
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #c18d4f; /** cor do botão da barra de rolagem **/
+    border-color: #eee; /** cor da borda do botão da barra de rolagem **/
+}
+
+#menu a {
+    color: #c18d4f; /** cor dos links **/
+}
+
+h1 {
+    font-family: 'Sacramento'; /** fonte do título da página **/
+    font-size: 26px; /** tamanho do título da página **/
+    color: #000; /** cor do título da página **/
+}
+
+.caixa, #cred {
+    background: #eee; /** cor do fundo das caixinhas **/
+}
+
+.bordas {
+    border-color: #ccc;  /** cor das bordas **/
+}
+
+h2 {
+    font-family: 'Abhaya Libre'; /** fonte do título das caixinhas **/
+    color: #000; /** cor do título das caixinhas **/
+    font-size: 18px; /** tamanho do título das caixinhas **/
+    border-color: #ccc; /** cor da borda do título das caixinhas **/
+}
+
+.post_desc {
+    background: #f0dbcc; /** cor do fundo da descrição das caixinhas **/
+    color: #333; /** cor da fonte da descrição das caixinhas **/
+}
+
+.caixa_bot {
+    background: #c18d4f; /** cor do fundo do botão das caixinhas **/
+    color: #fff; /** cor da fonte do botão das caixinhas **/
+}
+
+
+
+/*********************************************************************************************************************************************************************************** fim da PARTE PERSONALIZÁVEL DO CSS ************************************************************************************************************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body class="bg font">
+
+<div id="content">
+
+<aside id="sidebar" class="bordas">
+    
+<h1>
+        Welcome! <!-- título da página -->
+</h1>
+
+<p id="desc">
+        
+        Descrição da página <!-- descrição da página -->
+        
+</p><!-- #desc -->
+
+
+<!---------- MENU PRINCIPAL início ---------->
+<nav id="menu" class="bordas">
+
+<!-- BOTÃO início -->
+<a href="/">
+Voltar ao início <i class="fa fa-home" aria-hidden="true"></i>
+</a>
+<!-- BOTÃO fim -->
+
+<!-- BOTÃO início -->
+<a href="/ask">
+Ask <i class="fa fa-comments" aria-hidden="true"></i>
+</a>
+<!-- BOTÃO fim -->
+
+<!-- BOTÃO início -->
+<a href="/submit">
+Submit <i class="fa fa-envelope" aria-hidden="true"></i>
+</a>
+<!-- BOTÃO fim -->
+
+<!-- BOTÃO início -->
+<a href="/random">
+Random <i class="fa fa-random" aria-hidden="true"></i>
+</a>
+<!-- BOTÃO fim -->
+
+</nav><!-- #menu -->
+<!---------- MENU PRINCIPAL fim ---------->
+
+
+</aside> <!-- #sidebar -->
+
+
+
+
+
+
+
+<div id="caixas">
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- início do CONTEÚDO --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+<!----- CAIXINHA início ----->
+<div class="caixa bordas">
+<h2>
+             Título <!-- TÍTULO DA CAIXINHA --> 
+</h2>
+
+<img src="LINK_DA_IMAGEM"/> <!-- IMAGEM -->
+
+<div class="post_desc">
+            Descrição da caixinha.  <!-- DESCRIÇÃO DA CAIXINHA -->
+</div><!-- .post_desc -->
+
+<!-- BOTÃO DA CAIXINHA início -->
+<a href="LINK_DO_BOTAO" target="_blank" class="caixa_bot">
+            Usar <!-- TÍTULO DO BOTÃO DA CAIXINHA -->
+</a>
+<!-- BOTÃO DA CAIXINHA fim -->
+
+</div><!-- .caixa -->
+<!----- CAIXINHA fim ----->
+
+
+
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- CONTEÚDO fim ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+
+
+
+</div><!-- #caixas -->
+</div><!-- #content -->
+
+
+<!---- DON'T REMOVE THE CREDITS IF THE THEME ISN'T YOURS ---->
+<div id="cred" class="links bordas">
+
+<a href="http://anyhs-themes.tumblr.com" target="_blank" class="font">
+<div class="cred">
+<big>&copy;</big> Theme by <span>Anyh S.</span>
+</div> <!-- .cred -->
+</a>
+
+</div> <!-- #cred -->
+<!---- DON'T REMOVE THE CREDITS IF THE THEME ISN'T YOURS ---->
+
+</body>
+</html>

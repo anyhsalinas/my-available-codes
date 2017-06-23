@@ -1,0 +1,256 @@
+﻿<!--
+ 
+			LINKS PAGE #01
+			by Anyh Salinas - © 2016
+			www.anyhs-themes.tumblr.com
+ 
+ 
+ 
+   ♦ Don't remove/adulterate my credits;
+   ♦ Don't copy;
+   ♦ Don't redistribute;
+   ♦ Don't use this theme as base to make other(s) theme(s).
+     
+  
+   CONTACT:
+   http://www.anyhs-themes.tumblr.com/contato
+ 
+ 
+ 
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>{Title} | Links</title>
+    <link rel="shortcut icon" href="{favicon}" />
+    
+    <script type="text/javascript" src="http://static.tumblr.com/tiu5k68/xTkm8wqw2/tumblr-title-qtip.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    
+    <link href='https://fonts.googleapis.com/css?family=Baumans' rel='stylesheet' type='text/css'>
+
+
+
+<style type="text/css">
+
+
+
+
+
+
+
+
+/************************************************************************************************************************************************************************************ INÍCIO DA PARTE PERSONALIZÁVEL DO CSS ***************************************************************************************************/
+
+
+.cor_fundo_bg, body, body::-webkit-scrollbar, header #img {background: 
+
+                                        #f1ffed /* cor do FUNDO */
+;}
+.cor_fundo_ft {color: 
+                                        #f1ffed /* repita a cor do FUNDO */
+;}
+
+
+
+.cor_fonte_bg, .lista::-webkit-scrollbar-thumb {background: 
+
+                                        #f1ffed /* cor da FONTE (letras) */
+;}
+.cor_fonte_ft, .lista a, h2, #menu a, #cred {color: 
+                                        #f1ffed /* repita a cor da FONTE */
+;}
+
+
+
+.cor_titulos_bg, body::-webkit-scrollbar-thumb, .lista a, h2, #cred {background:
+
+                                        #669d59 /* cor dos TÍTULOS */
+;}
+.cor_titulos_ft, h1, #desc, #menu a:hover {color:
+
+                                        #669d59 /* repita a cor dos TÍTULOS */
+;}
+
+
+.cor_caixas_bg, .caixa, .lista::-webkit-scrollbar, #div {background: 
+
+                                        #a7e299 /* cor das CAIXAS */
+;}
+.cor_caixas_ft {color:
+
+                                        #a7e299 /* repita a cor das CAIXAS */
+;}
+.cor_caixas_bd, header #img {border-color:
+
+                                #a7e299 /* repita a cor das CAIXAS de novo */
+;}
+
+
+
+.cor_links_bg, .lista a, #menu a {background:
+
+                                        #85c576 /* cor dos LINKS */
+;}
+a, .cor_links_ft {color:
+                                        #85c576 /* cor dos LINKS */
+;}
+
+
+
+.cor_sombras, .lista a, #menu a {text-shadow: 1px 1px 0px
+
+                                        #669d59 /* cor da SOMBRA das letras */
+;}
+
+
+/**************************************************************************************************** FIM DA PARTE PERSONALIZÁVEL DO CSS **************************************************************************************************************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+body {margin: 0px; font-family: 'Baumans'; font-size: 12px;}
+body::-webkit-scrollbar {width: 10px;}
+body::-webkit-scrollbar-thumb {border-radius: 5px;}
+
+
+a {text-transform: none; text-decoration: none;}
+
+header {width: 500px; margin: 40px auto; margin-bottom: none; text-align: center; position: relative;}
+header h1 {font-weight: normal; margin: 0px auto; text-shadow: none; font-size: 30px; line-height: 30px; position: relative; display: table; padding: 0px 20px 0px 180px;}
+header #img {width: 60px; height: 60px; border-radius: 100%; padding: 5px; position: absolute; left: -10px; top: -10px; z-index: 2; border-width: 1px; border-style: solid;}
+header #img img {width: 60px; border-radius: 100%; opacity: .7; transition: .9s;
+}
+header #img:hover img { opacity: 1; transform: rotate(360deg);}
+header #div {height: 1px; width: 100%; position: absolute; left: 0px; top: 32px;}
+header #desc { margin: 20px auto; width: 200px;}
+header #menu a {padding: 5px; margin: 0px -0.5px; text-transform: uppercase; font-size: 10px; width: 70px; display: inline-block; transition: .5s;}
+header #menu a:hover {background: transparent; text-shadow: none;}
+
+#conteudo {width: 720px; text-align: center; margin: 20px auto;}
+
+.caixa {padding: 10px; width: 180px; display: inline-block; margin: 20px 18px 20px 18px; transition: .5s;}
+
+.caixa h2 {font-weight: normal; margin: -10px; margin-bottom: 10px; text-align: center; padding: 10px;}
+
+.lista {overflow-y: scroll; height: 180px;
+    -webkit-user-selection: none; -moz-user-selection: none; -o-user-selection: none; user-selection: none;
+}
+.lista::-webkit-scrollbar {width: 5px;}
+.lista::-webkit-scrollbar-thumb {border-radius: 5px;}
+
+.lista a {transition: .5s; display: block; padding: 5px; margin: 1px 1px 0px 5px;}
+.lista a:hover {letter-spacing: 2px;}
+
+/*** DON'T REMOVE THE CREDITS IF THE THEME WASN'T MADE BY YOU ***/
+#cred {z-index: 9999; padding: 5px; font-family: 'Helvetica', sans-serif; position: fixed; right: -96px; bottom: 60px; font-size: 11px; transition: .5s; text-shadow: none;}
+#cred:hover {right: 0px;}
+#cred i {margin-right: 2px;}
+#cred span {}
+/*** DON'T REMOVE THE CREDITS IF THE THEME WASN'T MADE BY YOU ***/
+
+
+
+
+
+    
+</style>
+</head>
+
+<body>
+
+<!---- DON'T REMOVE THE CREDITS IF THE THEME ISN'T YOURS ---->
+<a href="http://anyhs-themes.tumblr.com" target="_blank"><div id="cred">
+<i class="fa fa-copyright" aria-hidden="true"></i> Theme by <span id="anyhs">Anyh S.</span>
+</div></a>
+<!---- DON'T REMOVE THE CREDITS IF THE THEME ISN'T YOURS ---->
+
+    <header>
+    
+<h1>
+    
+<div id="img"><img src="{PortraitURL-128}"/></div>
+<div id="div"></div>
+
+
+    
+        <!-- INÍCIO DO TÍTULO -->
+        Welcome!
+        <!-- FIM DO TÍTULO -->
+        
+        
+        
+</h1>
+
+<div id="desc"> 
+    
+    
+    
+        <!-- INÍCIO DA DESCRIÇÃO -->
+        Sua descrição aqui... 
+        <!-- FIM DA DESCRIÇÃO -->
+        
+    
+    
+</div> <!-- #desc -->
+    
+<nav id="menu">
+
+
+        
+        <!-- INÍCIO DO MENU -->
+        <a href="/"> Voltar </a>
+        <a href="/ask"> Ask </a>
+        <a href="/submit"> Submit </a>
+        <a href="/archive"> Archive </a>
+        <!-- FIM DO MENU -->
+        
+
+        
+</nav> <!-- #menu -->
+    </header>
+    
+<div id="conteudo">
+
+
+<!-------------------------- INÍCIO DO CONTEÚDO ------------------------------->
+
+<!-- INÍCIO DA CAIXINHA -->
+<div class="caixa">
+        
+    <h2>Título da caixinha</h2>
+    
+    <div class="lista">
+    <a href="#"> Link1 </a>
+    <a href="#"> Link2 </a>
+    <a href="#"> Link3 </a>
+    </div><!-- .lista -->
+     
+</div> <!-- .caixa -->
+<!-- FIM DA CAIXINHA -->
+
+
+
+
+
+
+<!-------------------------- FIM DO CONTEÚDO ------------------------------->
+
+
+
+
+
+
+
+     
+</div> <!-- #conteudo -->
+
+</body>
+</html>

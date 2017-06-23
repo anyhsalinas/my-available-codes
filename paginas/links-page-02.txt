@@ -1,0 +1,297 @@
+﻿<!--
+ 
+			LINKS PAGE #02
+			by Anyh Salinas - © 2016
+			www.anyhs-themes.tumblr.com
+ 
+ 
+ 
+   ♦ Don't remove/adulterate my credits;
+   ♦ Don't copy;
+   ♦ Don't redistribute;
+   ♦ Don't use this theme as base to make other(s) theme(s).
+     
+  
+   CONTACT:
+   http://www.anyhs-themes.tumblr.com/contato
+ 
+ 
+ 
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>{Title}</title>
+    <link rel="shortcut icon" href="{Favicon}"/>
+    
+    <link href="https://fonts.googleapis.com/css?family=Abhaya Libre|Rajdhani|Baumans|Ubuntu|Roboto|Roboto Condensed|Share|Dosis" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster Two|Parisienne|Great Vibes|Rouge Script|Smythe|Megrim|Amatic SC|UnifrakturMaguntia" rel="stylesheet">
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    
+<script>
+$(document).ready(function(){
+   
+   $("h1, h2").addClass("titulo_font");
+   $("h2").addClass("gradiente menu_bg_denovo");
+   
+   $("#desc").addClass("titulo_font");
+   $(".caixa a").addClass("links links_font");
+   
+   $("#menu").addClass("menu_bg");
+   $("#menu a").addClass("menu_font");
+   
+   if($("body").outerWidth() >= 1300) {
+       $("#content").css({"width":"1320px"});
+   } else if($("body").outerWidth() >= 1200) {
+       $("#content").css({"width":"1100px"});
+   } else {
+       $("#content").css({"width":"880px"});
+   }
+    
+});
+</script>
+
+<!------
+    MASONRY SCRIPTS
+	SOURCE: http://creatre.tumblr.com/post/93242735110
+-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="http://static.tumblr.com/me5sfsd/12Qlmj66n/script.js"></script>
+
+<script type="text/javascript">
+$(window).load(function(){
+var $wall = $('#content');
+$wall.imagesLoaded(function(){
+$wall.masonry({
+itemSelector: '.caixa',
+isAnimated : true
+});
+});
+$wall.infinitescroll({
+navSelector : "div#navigation",
+nextSelector : "div#navigation a#nextPage",
+itemSelector : '.caixa',
+loadingImg : "",
+loadingText : " ",
+donetext : " ",
+extraScrollPx : 0,
+bufferPx : 10000,
+debug : false,
+errorCallback: function() {
+$('#infscr-loading').animate({opacity: .8},2000).fadeOut('normal');
+}},
+function( newElements ) {
+var $newElems = $( newElements );
+$newElems.hide();
+$newElems.imagesLoaded(function(){
+$wall.masonry( 'appended', $newElems, {isAnimated: true, animationOptions: {duration: 250, easing: 'linear', queue: false}}, function(){$newElems.fadeIn('slow');} );
+});
+}); $('#content').show(500);
+});
+</script>
+<!---- END MASONRY SCRIPTS -->
+
+<style type="text/css">
+
+body {margin: 0px; font-family: 'Share', sans-serif; font-size: 12px;}
+
+::-webkit-scrollbar {width: 10px; height: 10px;}
+::-webkit-scrollbar-thumb {border: 4px solid;}
+
+h1, h2, h3, h4 {font-weight: normal; margin: 0px;}
+
+a {text-decoration: none; color: #000;}
+
+#header {width: 100%; position: relative; padding-top: 20px;}
+
+#header h1 { margin-left: 20px; }
+
+#header #desc {margin: 20px; margin-top: 0px;}
+
+#menu {width: 100%; z-index: 1; display: table;}
+#menu a {display: inline-block; padding: 10px; width: 100px; font-family: 'Roboto Condensed', sans-serif; text-transform: uppercase; font-size: 10px; transition: .5s; text-align: center;}
+#menu a:hover {letter-spacing: 2px;}
+
+#content {margin: 20px auto; width: 440px;}
+
+.caixa {width: 200px; margin: 10px;} 
+
+.caixa h2 {margin-bottom: 1px; padding: 10px; border-bottom: 5px solid; }
+
+.caixa a {padding: 10px; display: block; margin-bottom: 1px; transition: .5s;}
+.caixa a:hover {letter-spacing: 2px;}
+
+
+/*** DON'T REMOVE THE CREDITS IF THE THEME ISN'T YOURS ***/
+#cred {z-index: 9999; font-family: 'Baumans', sans-serif; position: fixed; right: -83px; bottom: 20px; transition: .5s; text-transform: uppercase; font-size: 10px; padding: 5px;}
+
+#cred:hover {right: 0px;}
+
+/*** DON'T REMOVE THE CREDITS IF THE THEME ISN'T YOURS ***/
+
+
+
+
+
+
+
+
+/***************************************************************************************************************************************************************************************** início da PARTE PERSONALIZÁVEL DO CSS ***************************************************************************************************************************************************************************************/
+
+.bg {
+    background: #fff; /** cor do fundo **/
+	font-family: 'Share'; /** fonte principal **/
+}
+
+.font {
+    color: #777; /** cor da fonte **/
+}
+
+.gradiente {
+    background: linear-gradient(20deg,
+    #d587a3, /** primeira cor do gradiente **/
+    #87d5a8); /** segunda cor do gradiente **/
+}
+
+.titulo_font {
+    color: #fff; /** cor da fonte dos títulos **/
+}
+
+.menu_font {
+    color: #fff; /** cor da fonte do menu **/
+}
+
+.menu_bg {
+    background: #000; /** cor do fundo do menu **/
+}
+
+.caixa h2 {
+    border-color: #000; /** cor da borda do título das caixinhas **/
+}
+
+.links {
+    background: #eee; /** cor do fundo dos links das caixinhas **/
+}
+
+.links_font {
+   color: #000; /** cor da fonte dos links das caixinhas **/
+}
+
+::-webkit-scrollbar {
+    background: #fff; /** cor do fundo da barra de rolagem **/
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000; /** cor do botão da barra de rolagem **/
+    border-color: #fff; /** cor da borda do botão da barra de rolagem **/
+}
+
+h1 {
+     font-family: 'Rouge Script'; /** fonte do título principal **/
+     font-size: 50px; /** tamanho da fonte do título principal **/
+}
+
+h2 {
+     font-family: 'Rajdhani'; /** fonte do título das caixinhas **/
+     font-size: 20px; /** tamanho da fonte do título das caixinhas **/
+}
+
+
+/****************************************************************************************************************************************************************************************** fim da PARTE PERSONALIZÁVEL DO CSS  *****************************************************************************************************************************************************************************************/
+
+
+
+
+</style>
+</head>
+<body class="bg font">
+
+
+<!---- DON'T REMOVE THE CREDITS IF THE THEME ISN'T YOURS ---->
+<div id="cred" class="links">
+
+<a href="http://anyhs-themes.tumblr.com" target="_blank" class="font">
+<div class="cred">
+<big>&copy;</big> Theme by <span>Anyh S.</span>
+</div> <!-- .cred -->
+</a>
+
+</div> <!-- #cred -->
+<!---- DON'T REMOVE THE CREDITS IF THE THEME ISN'T YOURS ---->
+
+
+
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- início do CONTEÚDO ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!-------------------- HEADER STARTS -------------------->
+<header id="header" class="gradiente">
+
+<h1>
+		<!-- início do título da página -->
+        Welcome!
+		<!-- fim do título da página -->
+</h1>
+
+<p id="desc">
+
+		<!-- início da descrição da página -->
+        Bem-vindo(a) à minha página de links.
+		<!-- fim da descrição da página -->
+    
+</p><!-- #desc -->
+
+<nav id="menu">
+
+	<!-- início do menu -->
+    <a href="/"> Home </a> <!-- menu botao 1 -->
+    <a href="#"> Link1 </a> <!-- menu botao 2 -->
+    <a href="#"> Link2 </a> <!-- menu botao 3 -->
+    <a href="#"> Link3 </a> <!-- menu botao 4 -->
+    <a href="#"> Link4 </a> <!-- menu botao 5 -->
+    <a href="#"> Link5 </a> <!-- menu botao 6 -->
+	<!-- fim do menu -->
+
+</nav><!-- #menu -->
+
+
+</header>
+<!-------------------- HEADER ENDS -------------------->
+
+
+<div id="content">
+
+
+<!---------- início da caixinha ---------->
+<div class="caixa">
+<h2>
+		<!-- início do título da caixinha -->
+        Caixinha 1
+		<!-- fim do título da caixinha -->
+</h2>
+
+<a href="#">Link 1</a> <!-- link da caixinha -->
+<a href="#">Link 2</a> <!-- link da caixinha -->
+<a href="#">Link 3</a> <!-- link da caixinha -->
+<a href="#">Link 4</a> <!-- link da caixinha -->
+<a href="#">Link 5</a> <!-- link da caixinha -->
+
+</div><!-- .caixa -->
+<!---------- fim da caixinha ---------->
+
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- fim do CONTEÚDO ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+</div><!-- #content -->
+
+</body>
+</html>

@@ -1,0 +1,333 @@
+﻿<!--
+ 
+           MEMBERS PAGE #01
+           by Anyh Salinas - © 2017
+           www.anyhs-themes.tumblr.com
+ 
+ 
+ 
+ ♦ Don't remove/adulterate my credits;
+ ♦ Don't copy;
+ ♦ Don't redistribute;
+ ♦ Don't use this theme as base to make other(s) theme(s).
+ 
+ 
+ CONTACT:
+ http://www.anyhs-themes.tumblr.com/contato
+ 
+ 
+ 
+-->
+<!DOCTYPE html>
+
+<html>
+<head>
+
+
+    <title>{Title}</title>
+    <link rel="shortcut icon" href="{Favicon}" />
+
+
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width"/>
+    
+<!-- icons -->    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+<!-- icons -->
+
+<!-- qtip -->
+<script type="text/javascript" src="http://static.tumblr.com/tiu5k68/xTkm8wqw2/tumblr-title-qtip.js"></script>
+<!-- qtip -->
+
+<!-- smooth scroll -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.6/SmoothScroll.js"></script>
+<!-- smooth scroll -->
+
+<!-- fonts -->
+<link href='https://fonts.googleapis.com/css?family=Lobster|Baumans' rel='stylesheet' type='text/css'>
+<!-- fonts -->
+
+<style>
+
+/********** Corpo **********/
+body {margin: 0px; font-family: 'Baumans', Arial, sans-serif; font-size: 12px;}
+::-webkit-scrollbar {width: 5px; height: 5px;}
+
+a {text-decoration: none; transition: .5s;}
+
+
+/********** Header **********/
+header {width: 100%; text-align: center;}
+header h1 {font-weight: normal; font-size: 50px; font-family: 'Lobster', Verdana; margin: 0px; margin-top: 40px;}
+
+#divider {margin: 0px auto; font-size: 20px; line-height: 20px; margin-bottom: 10px;}
+
+#menu {display: table; margin: 0px auto;}
+#menu a {padding: 5px; width: 80px; display: inline-block; margin: 0px .5px; font-size: 10px; text-transform: uppercase; letter-spacing: .5px;}
+#menu a:hover {letter-spacing: 2px;}
+
+/********** Moderadores **********/
+#corpo {width: 848px; margin: 60px auto; text-align: center;}
+
+
+#mod {width: 150px; display: inline-block; margin: 20px; border-width: 1px;  border-style: solid; position: relative; padding: 10px; text-align: left;}
+
+#mod img {width: 148px; height: 148px; margin-bottom: -3px; opacity: .8; transition: .5s; border-width: 1px; border-style: solid;}
+#mod:hover img {opacity: 1;}
+
+#mod span {width: 150px; padding: 5px 0px; display: block; text-align: center; transition: .5s; margin-top: 1px;}
+
+
+.mod_desc {width: 140px; height: 40px; overflow-y: scroll; margin-top: 1px; font-size: 11px; text-align: justify; padding: 5px;}
+
+#social {width: 10px; position: absolute; top: 10px; right: -1px;}
+#social i {width: 10px; height: 10px; margin-bottom: 5px; text-align: center; padding: 5px; font-size: 11px; border-radius: 100%; transition: .5s; border-width: 1px; border-style: solid;}
+#social i:hover {transform: rotate(360deg);}
+
+
+#qTip {margin: 0px 0 0 16px; text-align: left; display: none; position: absolute; z-index: 99999; font-size: 10px; font-family: 'Baumans'; padding: 5px 5px; line-height: 10px; color: #000; background: #fff;}
+
+
+
+/*** DON'T REMOVE/ADULTERE THE CREDITS IF THE THEME ISN'T YOURS ***/
+#cred {z-index: 99; font-family: 'Baumans', sans-serif; position: fixed; right: -84px; bottom: 60px; transition: .5s; text-transform: uppercase; font-size: 10px;}
+
+#cred .cred {padding: 5px; transition: .5s;}
+
+#cred:hover {right: 0px;}
+/*** DON'T REMOVE/ADULTERE THE CREDITS IF THE THEME ISN'T YOURS ***/
+
+
+
+
+
+/********************************************************************************************************** ESTILO DA PÁGINA ******************************************************************************************************************/
+.background {
+    background: #DDDDDD; /** aqui vai a cor do fundo **/
+}
+
+::-webkit-scrollbar {background: #DDD;} /** cor do fundo da barra de rolagem **/
+
+::-webkit-scrollbar-thumb:vertical, ::-webkit-scrollbar-thumb:horizontal {background: #000000;} /** cor do botão da barra de rolagem **/
+
+
+.fonte {
+    color:  #777777; /** aqui vai a cor das letras **/
+}
+
+
+.links a {
+    color:  #7AB490; /** aqui vai a cor dos links **/
+}
+
+
+.links a:hover {
+    color:  #000000; /** a cor dos links quando passar o mouse em cima **/
+}
+
+
+.titulos h1 {
+    color: #222222; /** aqui vai a cor dos títulos **/
+}
+
+
+.menu, #menu a {
+    background: #222222; /** aqui vai a cor do fundo dos botões do menu **/
+    color: #FFFFFF; /** aqui vai a cor das letras dos botões do menu **/
+}
+
+
+.menu:hover, #menu a:hover {
+    background: #555555; /** a cor do fundo dos botões quando passar o mouse **/
+    color: #FFFFFF; /** a cor da fonte dos botões quando passar o mouse **/
+}
+
+#divider {
+    color: #77777; /** cor do divisor que fica embaixo do título **/
+}
+
+.bordas {
+    border-color: #AAAAAA; /** aqui vai a cor das bordas das caixas **/
+}
+
+#social i {
+    background: #DDDDDD; /** cor do fundo do menu de redes sociais **/
+    color: #000000; /** cor da fonte do menu de redes sociais **/
+}
+
+/********************************************************************************************************** ESTILO DA PÁGINA ******************************************************************************************************************/
+
+
+
+
+</style>
+</head>   
+
+<body class="background fonte links titulos">
+
+<!---------- HEADER ---------->
+<header>
+
+
+
+<!---- Título: --->
+    <h1>Moderadores</h1>
+    
+    <div id="divider">&diams; &diams; &diams;</div>
+    
+
+<!---- Menu: --->
+    <nav id="menu">
+        <a href="/" class="menu">Home</a>
+        <a href="/ask" class="menu">Ask</a>
+        <a href="/submit" class="menu">Submit</a>
+    </nav><!-- #menu -->
+    
+    
+    
+</header>
+
+
+
+
+<div id="corpo">
+
+
+
+
+<!-------------------------------------------------------------------------------------------------------------- MODERADOR 01 ----------------------------------------------------------------------------------------------------------------->
+<div id="mod" class="bordas">
+
+<!-- link da tag do moderador: -->
+<a href="/tagged/TAG-DO-MODERADOR">
+
+<!-- icon do moderador: -->
+    <img src="URL_DA_IMAGEM" class="bordas"/>
+
+<!-- tag ou nome do moderador: -->
+    <span class="menu"> #moderador1 </span>
+
+</a>
+
+<!-- descrição do moderador: -->
+<div class="mod_desc"> Descrição do moderador... </div>
+
+
+<div id="social">
+
+    <!--- link do tumblr do moderador: --->
+    <a href="https://tumblr.com/" title="Tumblr" target="_blank">
+    <!--- icon do tumblr: --->
+    <i class="fa fa-tumblr bordas" aria-hidden="true"></i>
+    </a>
+    
+    <!--- link do instagram do moderador: --->
+    <a href="https://instagram.com/" title="Instagram" target="_blank">
+    <!--- icon do instagram: --->
+    <i class="fa fa-instagram bordas" aria-hidden="true"></i>
+    </a>
+    
+    <!--- link do twitter do moderador: --->
+    <a href="http://twitter.com" title="Twitter" target="_blank">
+    <!--- icon do twitter: --->
+    <i class="fa fa-twitter bordas" aria-hidden="true"></i>
+    </a>
+    
+    <!--- link do facebook do moderador: --->
+    <a href="http://facebook.com/" title="Facebook" target="_blank">
+    <!--- icon do facebook: --->
+    <i class="fa fa-facebook bordas" aria-hidden="true"></i>
+    </a>
+    
+    <!--- link do pinterest do moderador: --->
+    <a href="http://pinterest.com/" title="Pinterest" target="_blank">
+    <!--- icon do pinterest: --->
+    <i class="fa fa-pinterest bordas" aria-hidden="true"></i>
+    </a>
+
+</div>
+</div>
+<!-------------------------------------------------------------------------------------------------------------- MODERADOR 01 ----------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+<!-------------------------------------------------------------------------------------------------------------- MODERADOR 02 ----------------------------------------------------------------------------------------------------------------->
+<div id="mod" class="bordas">
+
+<!-- link da tag do moderador: -->
+<a href="/tagged/TAG-DO-MODERADOR">
+
+<!-- icon do moderador: -->
+    <img src="URL_DA_IMAGEM" class="bordas"/>
+
+<!-- tag ou nome do moderador: -->
+    <span class="menu"> #moderador2 </span>
+
+</a>
+
+<!-- descrição do moderador: -->
+<div class="mod_desc"> Descrição do moderador... </div>
+
+
+<div id="social">
+
+    <!--- link do tumblr do moderador: --->
+    <a href="https://tumblr.com/" title="Tumblr" target="_blank">
+    <!--- icon do tumblr: --->
+    <i class="fa fa-tumblr bordas" aria-hidden="true"></i>
+    </a>
+    
+    <!--- link do instagram do moderador: --->
+    <a href="https://instagram.com/" title="Instagram" target="_blank">
+    <!--- icon do instagram: --->
+    <i class="fa fa-instagram bordas" aria-hidden="true"></i>
+    </a>
+    
+    <!--- link do twitter do moderador: --->
+    <a href="http://twitter.com" title="Twitter" target="_blank">
+    <!--- icon do twitter: --->
+    <i class="fa fa-twitter bordas" aria-hidden="true"></i>
+    </a>
+    
+    <!--- link do facebook do moderador: --->
+    <a href="http://facebook.com/" title="Facebook" target="_blank">
+    <!--- icon do facebook: --->
+    <i class="fa fa-facebook bordas" aria-hidden="true"></i>
+    </a>
+    
+    <!--- link do pinterest do moderador: --->
+    <a href="http://pinterest.com/" title="Pinterest" target="_blank">
+    <!--- icon do pinterest: --->
+    <i class="fa fa-pinterest bordas" aria-hidden="true"></i>
+    </a>
+
+</div>
+</div>
+<!-------------------------------------------------------------------------------------------------------------- MODERADOR 02 ----------------------------------------------------------------------------------------------------------------->
+
+
+
+
+</div> <!-- #corpo -->
+
+
+
+
+
+<!---- DON'T REMOVE/ADULTERE THE CREDITS IF THE THEME ISN'T YOURS ---->
+<div id="cred">
+
+<a href="http://anyhs-themes.tumblr.com" target="_blank">
+<div class="cred menu">
+<i class="fa fa-copyright" aria-hidden="true"></i> &nbsp; Theme by <span>Anyh S.</span>
+</div> <!-- .cred -->
+</a>
+
+</div> <!-- #cred -->
+<!---- DON'T REMOVE/ADULTERE THE CREDITS IF THE THEME ISN'T YOURS ---->
+    
+    
+</body>
+</html>

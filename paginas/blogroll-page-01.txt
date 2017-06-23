@@ -1,0 +1,180 @@
+﻿<!--------------------- BLOGROLL THEME BY: anyhs-themes.tumblr.com --------------------->
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>{Title} | Blogroll</title>
+    <link rel="shortcut icon" href="{Favicon}" />
+
+    <style>
+
+
+.bg {background: #000; /** mude o #000 pela cor q vc quer no background (fundo) da página **/
+}
+
+
+
+.fonte {color: #aaa; /** mude o #aaa pela cor q vc quer nas letras **/
+}
+
+
+
+.title {color: #fff; /** mude o #fff pela cor q vc quer nos títulos **/
+}
+
+
+
+.bordas {border: 1px solid #333; /** mude o #333 pela cor q vc quer nas bordas dos icons **/
+}
+
+
+
+.botao {background: #111; /** mude o #111 pela cor q vc quer no fundo do menu **/
+   color: #fff; /** mude o #fff pela cor q vc quer nas letras do menu **/
+}
+
+
+
+#qTip {color: #fff; /** mude o #fff pela cor q vc quer nas letras da plaquinha que aparece quando vc passa o mouse por cima dos icons **/
+    
+    background: #111; /** mude o #111 pela cor q vc quer no fundo da plaquinha que aparece quando vc passa o mouse por cima dos icons **/
+    }
+
+
+
+body::-webkit-scrollbar-thumb:vertical {
+    background: #fff; /** mude o #fff pela cor q vc quer na barra de rolagem **/
+}
+
+
+
+
+
+
+/********************************************************************************************** DAQUI PARA BAIXO VOCÊ NÃO DEVE MEXER EM MAIS NADA ********************************** A MENOS QUE SAIBA O QUE ESTÁ FAZENDO *****************************************************************************************************/
+
+
+body {margin: 0px; margin-bottom: 40px; font-family: 'Baumans'; font-size: 12px;}
+body::-webkit-scrollbar {width: 5px; height: 5px; margin: 5px;}
+body::-webkit-scrollbar-button:vertical { height:0px; display:block;}
+body::-webkit-scrollbar-thumb:vertical {border-radius: 5px;}
+
+a {text-decoration: none;}
+
+
+#qTip {margin: -10px 0 0 16px; text-align: left; display: none; position: absolute; text-transform: uppercase; z-index: 99; font-size: 10px; font-family: 'Baumans'; padding: 5px; line-height: 13px;}
+
+
+body::-webkit-scrollbar-thumb:vertical {
+    background: #fff; /** AQUI VOCÊ DEFINE A COR DA BARRA DE ROLAGEM **/
+}
+
+/****** HEADER ******/
+#header {text-align: center; width: 100%;}
+#header h1 {font-weight: normal; font-size: 28px; font-family: 'Graduate'; margin: 0px; margin-top: 40px;}
+
+#menu {font-size: 11px; margin-top: 0px; position: relative; width: 100%; padding: 20px 0px;}
+#menu a {padding: 2px; width: 80px; transition: .5s; padding: 3px; width: 60px; display: inline-block; margin: 0px 2px;}
+#menu a:hover {text-decoration: line-through; letter-spacing: 3px;}
+
+.menu {position: relative; z-index: 999; width: 100%;}
+.sticky {position: fixed; top: 0px; z-index: 999;}
+
+
+/****** BLOGS ******/
+#blogs {width: 800px; height: 40px; margin: 40px auto; text-align: center;}
+
+#blogs ul {list-style: none; margin: 0px; margin-left: -40px;}
+
+#blogs li {transition: .5s; display: inline-block; margin: 11px; width: 40px; height: 40px; position: relative; z-index: 2; padding: 4px; border-radius: 0%;}
+#blogs li:hover {transform: scale(1.5);}
+
+#blogs li img {transition: .9s; width: 40px; margin: 0px; opacity: .5;  z-index: 3; border-radius: 0%;}
+#blogs li:hover img {opacity: 1;}
+
+
+
+/****** DON'T REMOVE THE CREDITS, this theme isn't yours! ******/
+/****** NÃO REMOVA OS CRÉDITOS, este theme não é seu! **********/
+#cred {position: fixed; bottom: 30px; right: -166px; width: 205px; padding: 5px; transition: .9s; font-size: 11px; z-index: 999;}
+#cred:hover {right: 0px;}
+/****** DON'T REMOVE THE CREDITS, this theme isn't yours! ******/
+/****** NÃO REMOVA OS CRÉDITOS, este theme não é seu! **********/
+
+
+    </style>
+</head>
+
+<body class="bg" class="fonte">
+
+
+<!------ DON'T REMOVE THE CREDITS, this theme isn't yours! ------>
+<!------ NÃO REMOVA OS CRÉDITOS, este theme não é seu! ---------->
+<a href="http://anyhs-themes.tumblr.com" target="_blank" class="title">
+<div id="cred" class="bg">
+   &copy; Theme by: <span class="fonte">www.anyhs-themes.tumblr.com</span>
+</div>
+</a>
+<!------ DON'T REMOVE THE CREDITS, this theme isn't yours! ------>
+<!------ NÃO REMOVA OS CRÉDITOS, este theme não é seu! ---------->
+
+
+
+<!------ HEADER ------>
+<div id="header">
+<h1 class="title">Blogroll</h1>
+
+<div class="menu">
+<nav id="menu" class="fonte bg">
+    <a href="/" class="botao">Home</a>
+	<small>♦</small>
+    <a href="/ask" class="botao">Ask</a>
+</nav>
+</div>
+
+</div>
+
+<!------ BLOGS ------>
+<div id="blogs" class="fonte">
+
+{block:Following}
+<ul>
+
+{block:Followed}
+<li class="bordas">
+<a href="{FollowedURL}" title="{FollowedName}" target="_blank">
+<img src="{FollowedPortraitURL-64}"/>
+</a>
+</li>
+{/block:Followed}
+
+</ul>
+{/block:Following}
+
+
+</div>
+
+
+</body>
+
+<!--- SCRIPTS --->
+<link href='https://fonts.googleapis.com/css?family=Graduate|Baumans' rel='stylesheet' type='text/css'>
+    
+<script type="text/javascript" src="http://static.tumblr.com/tiu5k68/xTkm8wqw2/tumblr-title-qtip.js"></script>
+
+<script>
+var menu = document.querySelector('.menu');
+var origOffsetY = menu.offsetTop;
+
+function onScroll(e) {
+window.scrollY >= origOffsetY ? menu.classList.add('sticky') :
+menu.classList.remove('sticky');
+}
+
+document.addEventListener('scroll', onScroll);
+</script>
+<!--- SCRIPTS --->
+
+</html>
+
+<!--------------------- THEME BY: anyhs-themes.tumblr.com --------------------->
