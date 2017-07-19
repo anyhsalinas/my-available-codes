@@ -177,7 +177,7 @@ $(window).ready(function(){
     {block:IfShowSearchBar}
     $('.search').submit(function(event){
         var value = $('input:first').val();
-        location.replace('http://{Name}.tumblr.com/tagged/' + value);
+        location.assign('http://{Name}.tumblr.com/tagged/' + value);
     });
     {/block:IfShowSearchBar}
     /** search tag script (by shythemes.tumblr.com) **/
