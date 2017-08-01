@@ -1,4 +1,4 @@
-﻿<!--
+<!--
  
  
            THEME #42
@@ -259,13 +259,6 @@ columns();
     }
     /** sidebar position **/
     
-/** tumblr blogs avatars **/
-$(".tumblr_blog").each(function() {
-    var tumblrblogurl = $(this).text();
-    $(this).before("<img src='https://api.tumblr.com/v2/blog/" + tumblrblogurl + ".tumblr.com/avatar/24' class='tumblr_blog_avatar'/>");
-});
-/** tumblr blogs avatars **/
-    
 
 /** align posts **/
 var $wall = $('#posts');
@@ -332,7 +325,12 @@ $wall.masonry( 'appended', $newElems, {isAnimated: true, animationOptions: {dura
 
 
 
-
+/** tumblr blogs avatars **/
+$(".tumblr_blog").each(function() {
+    var tumblrblogurl = $(this).text();
+    $(this).before("<img src='https://api.tumblr.com/v2/blog/" + tumblrblogurl + ".tumblr.com/avatar/24' class='tumblr_blog_avatar'/>");
+});
+/** tumblr blogs avatars **/
 
 
 
@@ -444,7 +442,7 @@ background: {color:Sidebar} url('{image:Sidebar Background}'); background-positi
 
 
 #desc {max-width: 500px; margin: 10px auto; font-size: {text:Texts size}px; line-height: {text:Texts size}px;}
-#desc .space1 {width: 35px; height: calc(3 * 10px); float: right; margin-top: 50px;}
+#desc .space1 {width: 35px; height: 70px; float: right; margin-top: 0px; }
 
 
 
