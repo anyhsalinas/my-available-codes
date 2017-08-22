@@ -1,4 +1,4 @@
-﻿<!--
+<!--
 
 
             THEME #29
@@ -172,7 +172,11 @@
     <meta name="if:Modo ebook" content="1"/>
     
 
-    
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<!-- jquery -->
+
     
     
 <link href='https://fonts.googleapis.com/css?family=Patrick+Hand|Indie+Flower|Bad+Script|Sue+Ellen+Francisco|Loved+by+the+King|Dawning+of+a+New+Day|Mr+De+Haviland|Miss+Fajardose|Monsieur+La+Doulaise|Great+Vibes|Parisienne|Rouge+Script|Sacramento|Grand+Hotel|Lobster|Mystery+Quest|Milonga|Cinzel|IM+Fell+English+SC|Special+Elite|Black+Ops+One|UnifrakturMaguntia|Astloch|Megrim|Amatic+SC|Graduate|Bangers|Codystar' rel='stylesheet' type='text/css'>
@@ -182,10 +186,6 @@
 <script type="text/javascript" src="http://static.tumblr.com/tiu5k68/xTkm8wqw2/tumblr-title-qtip.js"></script>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
-
-
-
-<script type="text/javascript" src="http://static.tumblr.com/q0etgkr/mFbkoqlkr/tumblrautopager.js"></script>
 
 
 
@@ -319,10 +319,8 @@ header .enfeite {width: 400px; height: 51px; margin: 0px auto; margin-top: 10px;
 /******************** POSTS ********************/
 #posts {width: 520px; margin: 0px auto;
     {block:IfModoebook}
-    {block:IndexPage}display: none;{/block:IndexPage}
+    {block:HomePage}display: none;{/block:HomePage}
     {block:PermalinkPage}display: block;{/block:PermalinkPage}
-    {block:TagPage}display: block;{/block:TagPage}
-    
     {/block:IfModoebook}
 }
 .caixa {background: {color:Posts}; margin-bottom: 20px; padding: 10px; border: 1px solid {color:Borda dos posts}; width: 500px; position: relative;}
@@ -466,8 +464,34 @@ header .enfeite {width: 400px; height: 51px; margin: 0px auto; margin-top: 10px;
 #pmlink .more_notes_link_container {margin-top: 10px;}
 
 
-.tumblrAutoPager_page_separator {display: none;}
-.tumblrAutoPager_page_info {display: none;}
+
+
+
+
+
+/********** PAGINAÇÃO **********/
+#navigation {font-size: 12px; line-height: 14px; text-align: center;display: block; margin: 40px auto;
+    {block:IfModoebook}
+    {block:HomePage}display: none;{/block:HomePage}
+    {block:PermalinkPage}display: block;{/block:PermalinkPage}
+    {/block:IfModoebook}
+}
+
+#navigation .seta {margin: 0px 20px; display: inline-block; font-size: 10px;}
+
+#navigation .nav {transition: .9s; padding: 7px 10px; margin: 0px 4px; display: inline-block; position: relative;}
+#navigation .nav:hover {background: transparent;}
+
+
+#navigation .current {padding: 5px 10px; margin: 0px 2px; display: inline-block;}
+
+
+
+/*** rolagem infinita ***/
+#infscr-loading {font-size: 10px; font-family: 'Roboto Condensed'; text-transform: uppercase; z-index: 999; text-align: center; position: fixed; bottom: 40px; width: 100%; }
+#infscr-loading i {font-size: 10px;}
+#infscr-loading img {display: none;}
+
 
 
 
@@ -523,12 +547,12 @@ header .enfeite {width: 400px; height: 51px; margin: 0px auto; margin-top: 10px;
 {/block:IfBotao4Link}
 
 {block:IfModoebook}
-{block:IndexPage}
+{block:HomePage}
 <span id="popbot">
 &diams;
 <span onclick="popup();"> {text:Botao PopUp Titulo} </span>
 </span>
-{/block:IndexPage}
+{/block:HomePage}
 {/block:IfModoebook}
 
 </nav> <!-- #menu -->
@@ -596,7 +620,7 @@ header .enfeite {width: 400px; height: 51px; margin: 0px auto; margin-top: 10px;
 
 <!-------------------- POPUP -------------------->
 {block:IfModoebook}
-{block:IndexPage}
+{block:HomePage}
 
 
 <!--- LOADING --->
@@ -615,7 +639,7 @@ header .enfeite {width: 400px; height: 51px; margin: 0px auto; margin-top: 10px;
 </div>
 
 
-{/block:IndexPage}
+{/block:HomePage}
 {/block:IfModoebook}
 
 
@@ -628,9 +652,9 @@ header .enfeite {width: 400px; height: 51px; margin: 0px auto; margin-top: 10px;
 
 
 <!------------------------- POSTS ------------------------->
-<div id="posts" class="autopagerize_page_element">
+<div id="posts">
 {block:Posts}
-<div class="caixa">
+<div class="caixa" id="{PostID}">
 
 
 
@@ -947,6 +971,38 @@ header .enfeite {width: 400px; height: 51px; margin: 0px auto; margin-top: 10px;
 
 
 
+<!------------------------- ROLAGEM INFINITA ------------------------->
+{block:Pagination}
+<div class="column navigation" id="navigation">
+{block:PreviousPage}<a href="{PreviousPage}" class="navigate" id="prevPage">{/block:PreviousPage}
+<div class="seta">
+<i class="fa fa-arrow-left" aria-hidden="true"></i>
+</div><!-- .seta -->
+{block:PreviousPage}</a>{/block:PreviousPage}
+
+
+{block:JumpPagination length="9"}
+
+{block:CurrentPage}
+<span class="current">{PageNumber}</span>
+{/block:CurrentPage}
+
+{block:JumpPage}
+<a href="{URL}">
+<span class="nav">{PageNumber}</span>
+</a>
+{/block:JumpPage}
+
+{/block:JumpPagination}
+
+
+{block:NextPage}<a href="{NextPage}" class="navigate seta" id="nextPage">{/block:NextPage}
+<div class="seta">
+<i class="fa fa-arrow-right" aria-hidden="true"></i>
+</div><!-- .seta -->
+{block:NextPage}</a>{/block:NextPage}
+</div>
+{/block:Pagination}
 
 
 
@@ -963,12 +1019,14 @@ header .enfeite {width: 400px; height: 51px; margin: 0px auto; margin-top: 10px;
     function popup() {
         document.getElementById('popup').style.display='none';
         document.getElementById('posts').style.display='block';
+        document.getElementById('navigation').style.display='block';
         document.getElementById('popbot').innerHTML='&diams; <span onclick="popdown();"> {lang:Back} </span>';
     }
     
     function popdown() {
             document.getElementById('popup').style.display='block';
             document.getElementById('posts').style.display='none';
+            document.getElementById('navigation').style.display='none';
             document.getElementById('popbot').innerHTML='&diams; <span onclick="popup();"> {text:Botao PopUp Titulo} </span>';
         }
         
