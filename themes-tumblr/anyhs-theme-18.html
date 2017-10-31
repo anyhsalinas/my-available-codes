@@ -285,10 +285,10 @@ box-shadow: 0px 0px 0px 1px {color:Background},
 {/block:IfSidebarnomeio}
 
 
-{block:PermalinkPage} width: 500px;
+{block:PermalinkPage} width: 840px;
 
 {block:IfSidebarnomeio}
-    margin-left: -150px; width: 1100px;
+    margin-left: -150px;
 {/block:IfSidebarnomeio}
 
 {/block:PermalinkPage}
@@ -309,10 +309,7 @@ width: 250px;
 {/block:IndexPage}
 
 {block:PermalinkPage}
-width: 500px; margin-bottom: 30px;
-    {block:IfSidebarnomeio}
-    width: 400px;
-    {/block:IfSidebarnomeio}
+width: 400px;
 {/block:PermalinkPage}
 }
 
@@ -347,15 +344,14 @@ width: 500px; margin-bottom: 30px;
 /****** INFO POSTS ******/
 #info {float: right; width: 400px;}
 
-.info {width: 400px; padding: 5px; background: {color:Posts Fundo}; {block:IfPostsBordasArredondadas}border-radius: 3px;{/block:IfPostsBordasArredondadas}
+.info {padding: 5px; background: {color:Posts Fundo}; {block:IfPostsBordasArredondadas}border-radius: 3px;{/block:IfPostsBordasArredondadas}
 box-shadow: 0px 0px 0px 3px {color:Posts Bordas},
     0px 0px 0px 4px {color:Background},
     0px 0px 0px 6px {color:Posts Bordas},
     0px 0px 0px 7px {color:Background},
     0px 0px 0px 8px {color:Posts Bordas};
 
-margin-bottom: 30px;
-}
+margin-bottom: 30px;}
 
 
 .info h1 {font-size: {text:Posts Titulos Tamanho}px; font-family: {select:Posts Titulos Fonte}; color: {color:Posts Titulos}; text-align: center; font-weight: normal; margin: 0px 0px 10px 0px; border-bottom: 1px dashed {color:Background}; padding-bottom: 10px;}
