@@ -1,4 +1,4 @@
-﻿<!--
+<!--
  
 			THEME #18
 			by Anyh Salinas - © 2016
@@ -19,19 +19,16 @@
  
 -->
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
- 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- 
+
+<title>{Title}</title>
+<link rel="shortcut icon" href="{favicon}" />
 
 
-{block:IndexPage}
-<!------
-    MASONRY SCRIPTS SOURCE: http://creatre.tumblr.com/post/93242735110
--->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<!------ MASONRY SCRIPTS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
 <script type="text/javascript" src="http://static.tumblr.com/me5sfsd/12Qlmj66n/script.js"></script>
 
@@ -67,7 +64,7 @@ $wall.masonry( 'appended', $newElems, {isAnimated: true, animationOptions: {dura
 });
 </script>
 <!---- END MASONRY SCRIPTS -->
-{/block:IndexPage}
+
 
 
 
@@ -79,10 +76,7 @@ $wall.masonry( 'appended', $newElems, {isAnimated: true, animationOptions: {dura
 
 <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
  
- 
- 
-<title>{Title}</title>
-<link rel="shortcut icon" href="{favicon}" />
+
  
 <meta name="image:Background" content="imageURL"/>
 <meta name="image:Sidebar Foto" content="imageURL"/>
@@ -281,22 +275,26 @@ box-shadow: 0px 0px 0px 1px {color:Background},
 
 /********* POSTS *********/
 #posts {margin-top: 40px; position: relative; z-index: 1;
-{block:IndexPage}
 
 {block:IfNotSidebarnomeio}
-    left: 266px; width: {select:Numero de colunas se a sidebar estiver do lado};
+    margin-left: 266px; width: {select:Numero de colunas se a sidebar estiver do lado};
 {/block:IfNotSidebarnomeio}
 
 {block:IfSidebarnomeio}
-    left: -140px; width: 1080px;
+    margin-left: -140px; width: 1080px;
 {/block:IfSidebarnomeio}
 
-{/block:IndexPage}
 
-{block:PermalinkPage} width: 400px;{/block:PermalinkPage}
+{block:PermalinkPage} width: 500px;
+
+{block:IfSidebarnomeio}
+    margin-left: -150px; width: 1100px;
+{/block:IfSidebarnomeio}
+
+{/block:PermalinkPage}
 }
 
-.caixa {padding: 5px; background: {color:Posts Fundo}; float: left; overflow: hidden; position: relative; {block:IfPostsBordasArredondadas}border-radius: 3px;{/block:IfPostsBordasArredondadas}
+.caixa {padding: 5px; background: {color:Posts Fundo}; overflow: hidden; position: relative; float: left; {block:IfPostsBordasArredondadas}border-radius: 3px;{/block:IfPostsBordasArredondadas}
 box-shadow: 0px 0px 0px 3px {color:Posts Bordas},
     0px 0px 0px 4px {color:Background},
     0px 0px 0px 6px {color:Posts Bordas},
@@ -311,9 +309,10 @@ width: 250px;
 {/block:IndexPage}
 
 {block:PermalinkPage}
-width: 400px;
-{block:IfNotSidebarnomeio}margin: 0px 0px 0px 260px;{/block:IfNotSidebarnomeio}
-{block:IfSidebarnomeio}margin: 0px -150px 0px -150px;{/block:IfSidebarnomeio}
+width: 500px; margin-bottom: 30px;
+    {block:IfSidebarnomeio}
+    width: 400px;
+    {/block:IfSidebarnomeio}
 {/block:PermalinkPage}
 }
 
@@ -346,31 +345,31 @@ width: 400px;
 
  
 /****** INFO POSTS ******/
-#info { color: {color:Posts Titulos}; width: 400px; float: left; 
-{block:IfNotSidebarnomeio}margin-left: 690px;{/block:IfNotSidebarnomeio}
-{block:IfSidebarnomeio}margin-left: 430px;{/block:IfSidebarnomeio}
-}
+#info {float: right; width: 400px;}
 
-.info {padding: 5px; background: {color:Posts Fundo}; {block:IfPostsBordasArredondadas}border-radius: 3px;{/block:IfPostsBordasArredondadas} margin-bottom: 20px;
+.info {width: 400px; padding: 5px; background: {color:Posts Fundo}; {block:IfPostsBordasArredondadas}border-radius: 3px;{/block:IfPostsBordasArredondadas}
 box-shadow: 0px 0px 0px 3px {color:Posts Bordas},
     0px 0px 0px 4px {color:Background},
     0px 0px 0px 6px {color:Posts Bordas},
     0px 0px 0px 7px {color:Background},
-    0px 0px 0px 8px {color:Posts Bordas};}
+    0px 0px 0px 8px {color:Posts Bordas};
+
+margin-bottom: 30px;
+}
 
 
-#info h1 {font-size: {text:Posts Titulos Tamanho}px; font-family: {select:Posts Titulos Fonte}; color: {color:Posts Titulos}; text-align: center; font-weight: normal; margin: 0px 0px 10px 0px; border-bottom: 1px dashed {color:Background}; padding-bottom: 10px;}
+.info h1 {font-size: {text:Posts Titulos Tamanho}px; font-family: {select:Posts Titulos Fonte}; color: {color:Posts Titulos}; text-align: center; font-weight: normal; margin: 0px 0px 10px 0px; border-bottom: 1px dashed {color:Background}; padding-bottom: 10px;}
 
-#info p {margin: 0px; border-left: 3px solid {color:Posts Titulos}; margin-bottom: 2px; padding: 2px 5px 2px 5px; font-family: 'Yanone Kaffeesatz', sans-serif; font-size: 14px; transition: .5s;}
-#info p:hover {border-left: 6px solid {color:Links};}
+.info p {margin: 0px; border-left: 3px solid {color:Posts Titulos}; margin-bottom: 2px; padding: 2px 5px 2px 5px; font-family: 'Yanone Kaffeesatz', sans-serif; font-size: 14px; transition: .5s;}
+.info p:hover {border-left: 6px solid {color:Links};}
 
-#info b {font-weight: normal; color: {color:Links};}
+.info b {font-weight: normal; color: {color:Links};}
 
-#info ol {list-style: none; margin-left: -30px;}
-#info li {padding-bottom: 5px; transition-duration: .5s; margin-bottom: 2px;}
-#info li:hover {margin-left: 30px;}
+.info ol {list-style: none; margin-left: -30px;}
+.info li {padding-bottom: 5px; transition-duration: .5s; margin-bottom: 2px;}
+.info li:hover {margin-left: 30px;}
 
-#info img {border-radius: 100%; width: 12px; margin: 0px 4px -5px 0px; transition-duration: .5s; border: 2px solid {color:Posts Titulos};}
+.info img {border-radius: 100%; width: 12px; margin: 0px 4px -5px 0px; transition-duration: .5s; border: 2px solid {color:Posts Titulos};}
  
  
 /****** QUOTES ******/
@@ -580,17 +579,18 @@ box-shadow: 0px 0px 0px 3px {color:Posts Bordas},
 
 <div class="notb">
 {block:IfNotesempreto}{LikeButton size=15 color=Black}{/block:IfNotesempreto}
-{block:IfNotNotesempreto}{LikeButton size=15 color=White}{/block:IfNotNotesempreto}</div>
+{block:IfNotNotesempreto}{LikeButton size=15 color=White}{/block:IfNotNotesempreto}</div><!-- .notb -->
 
-</div>
+</div><!-- #notes -->
 {/block:IndexPage}
 
-</div>
+</div><!-- .caixa -->
 
 {block:PermalinkPage}
 <div id="info">
 
 <div class="info">
+
 <h1>Informações sobre o Post:</h1>
 <p>Postado dia <b>{DayOfMonth}.{MonthNumberWithZero}.{Year}</b> às <b>{24Hour}:{Minutes}</b></p>
 
@@ -606,21 +606,21 @@ box-shadow: 0px 0px 0px 3px {color:Posts Bordas},
 <p>Tags: {block:Tags}#<a href="{TagURL}">{Tag} </a>{/block:Tags}</p>
 {/block:HasTags}
 
-</div>
+</div><!-- .info -->
 
 {block:PostNotes}
 <div class="info">
 <h1>Notas:</h1>
 {PostNotes}
-</div>
+</div><!-- .info -->
 {/block:PostNotes}
 
-</div>
+</div><!-- #info -->
 {/block:PermalinkPage}
  
 
 {/block:Posts}
-</div>
+</div><!-- #posts -->
  
 {block:IndexPage}
 <div class="column navigation" id="navigation">
