@@ -1,4 +1,24 @@
+<!--
 
+ 
+           ABOUT PAGE #01
+           by Anyh Salinas - © 2017
+           www.anyhs-themes.tumblr.com
+ 
+ 
+ 
+ ♦ Don't remove/adulterate my credits;
+ ♦ Don't copy;
+ ♦ Don't redistribute;
+ ♦ Don't use this theme as base to make other(s) theme(s).
+ 
+ 
+ CONTACT:
+ http://www.anyhs-themes.tumblr.com/contato
+ 
+ 
+ 
+-->
 <!DOCTYPE>
 <html>
 <head>
