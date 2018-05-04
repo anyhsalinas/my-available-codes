@@ -1,4 +1,4 @@
-﻿<!--
+<!--
 
 
             THEME #32
@@ -23,7 +23,7 @@
  
 -->
 
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
 <head>
     
@@ -32,17 +32,24 @@
     <link rel="alternate" type="application/rss+xml" href="{RSS}">
     {block:Description} <meta name="description" content="{MetaDescription}" /> {/block:Description}
     
+    
+    
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<!-- jquery -->
 
-{block:IndexPage}
-<!------
-    MASONRY SCRIPTS SOURCE: http://creatre.tumblr.com/post/93242735110
--->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<!---- START MASONRY SCRIPTS -->
 <script type="text/javascript" src="http://static.tumblr.com/me5sfsd/12Qlmj66n/script.js"></script>
 
 <script type="text/javascript">
-$(window).load(function(){
+$(window).ready(function(){
+    
+$("#all").animate({opacity: '1'},1000);
+
+
+{block:IndexPage}
+/** align posts **/
 var $wall = $('#posts');
 $wall.imagesLoaded(function(){
 $wall.masonry({
@@ -50,6 +57,9 @@ itemSelector: '.caixa',
 isAnimated : true
 });
 });
+/** align posts **/
+
+/** infinite scroll **/
 $wall.infinitescroll({
 navSelector : "div#navigation",
 nextSelector : "div#navigation a#nextPage",
@@ -65,22 +75,33 @@ $('#infscr-loading').animate({opacity: .8},2000).fadeOut('normal');
 }},
 function( newElements ) {
 var $newElems = $( newElements );
+
+/** make like button works **/
+var $newElemsIDs = $newElems.map(function(){ 
+    return this.id; 
+}).get();
+console.log($newElems, $newElemsIDs);
+Tumblr.LikeButton.get_status_by_post_ids($newElemsIDs);
+/** make like button works **/
+
 $newElems.hide();
 $newElems.imagesLoaded(function(){
 $wall.masonry( 'appended', $newElems, {isAnimated: true, animationOptions: {duration: 250, easing: 'linear', queue: false}}, function(){$newElems.fadeIn('slow');} );
 });
 }); $('#posts').show(500);
+/** infinite scroll **/
+{/block:IndexPage}
+
 });
 </script>
 <!---- END MASONRY SCRIPTS -->
-{/block:IndexPage}
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 <script type="text/javascript" src="http://static.tumblr.com/tiu5k68/xTkm8wqw2/tumblr-title-qtip.js"></script>
 
 <link href='https://fonts.googleapis.com/css?family=Baumans|Roboto Condensed|Share|Ubuntu|Dosis|Bree Serif' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=UnifrakturMaguntia|Megrim|Mystery Quest|Milonga|Dawning of a New Day|Rouge Script|Sacramento|Smythe|Astloch|Parisienne|Miss Fajardose|Monsieur La Doulaise|Special Elite|IM Fell English SC|' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=UnifrakturMaguntia|Megrim|Mystery Quest|Milonga|Dawning of a New Day|Rouge Script|Sacramento|Smythe|Astloch|Parisienne|Miss Fajardose|Monsieur La Doulaise|Special Elite|IM Fell English SC' rel='stylesheet' type='text/css'>
 
     <meta name="image:Background" content=""/>
     <meta name="image:Background das bordas" content=""/>
@@ -183,6 +204,8 @@ $wall.masonry( 'appended', $newElems, {isAnimated: true, animationOptions: {dura
 
 /******************** BASE ********************/
 body {margin: 0px; background: {color:Background} url('{image:Background}') fixed; color: {color:Fonte}; font-family: {select:Fonte}; font-size: {text:Tamanho da fonte}px;}
+
+#all {opacity: 0;}
 
 body::-webkit-scrollbar {width: 10px; height: 10px; background: {color:Background};}
 body::-webkit-scrollbar-button:vertical {background: {color:Background}; height: 0px; display: block;}
@@ -438,6 +461,7 @@ box-shadow: 2px 2px 5px 0px rgba(0,0,0,.5), 0px 0px 0px 1px {color:Posts};
 </style>    
 </head>
 <body>
+<div id="all">
 
 
 <!------------------------- HEADER ------------------------->
@@ -452,7 +476,7 @@ box-shadow: 2px 2px 5px 0px rgba(0,0,0,.5), 0px 0px 0px 1px {color:Posts};
 {block:IfBotao5Link} <a href="{text:Botao5 Link}">{text:Botao5 Titulo}</a> {/block:IfBotao5Link}
 {block:IfBotao6Link} <a href="{text:Botao6 Link}">{text:Botao6 Titulo}</a> {/block:IfBotao6Link}
 {block:IfBotao7Link} <a href="{text:Botao7 Link}">{text:Botao7 Titulo}</a> {/block:IfBotao7Link}
-{block:IfBotao8Link} <a href="{text:Botao8 Link}">{text:Botao8 Titulo}</a> {/block:IfBotao8Link}
+{block:IfBotao8Link} <a href="{text:Botao6 Link}">{text:Botao8 Titulo}</a> {/block:IfBotao8Link}
 </div><!-- .menu -->
 
 <div id="rendinha"></div>
@@ -544,7 +568,7 @@ box-shadow: 2px 2px 5px 0px rgba(0,0,0,.5), 0px 0px 0px 1px {color:Posts};
 <!--MUSICAS-->
 {block:Audio}
 
-<div class="postsimg">
+<div id="postsimg">
 {block:IndexPage}
 {block:AudioEmbed}{AudioEmbed-250}{/block:AudioEmbed}
 {/block:IndexPage}
@@ -838,5 +862,6 @@ From <a href="{SubmitterURL}" target="_blank">{Submitter}</a>
 
 
 
+</div><!-- #all -->
 </body>
 </html>
