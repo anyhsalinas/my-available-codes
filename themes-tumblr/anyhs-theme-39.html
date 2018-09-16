@@ -1,4 +1,4 @@
-﻿<!--
+<!--
  
  
            THEME #39
@@ -28,8 +28,8 @@
     <meta name="viewport" content="width=device-width"/>
     
     <title> {Title} {block:PostSummary}| {PostSummary}{/block:PostSummary}</title>
-    <link rel="shortcut icon" href="{Favicon}">
-    <link rel="alternate" type="application/rss+xml" href="{RSS}">
+    <link rel="shortcut icon" href="{Favicon}"/>
+    <link rel="alternate" type="application/rss+xml" href="{RSS}"/>
     {block:Description} <meta name="description" content="{MetaDescription}" /> {/block:Description}
 
     <meta name="image:Background" content=""/>
@@ -46,7 +46,7 @@
     <meta name="color:Links" content="#73a5a3"/>
     <meta name="color:Posts Notes" content="#375756"/>
     
-    <link href='https://fonts.googleapis.com/css?family=Dosis|Roboto|Roboto Condensed|Share|Ubuntu|Baumans|Rajdhani|Vidaloka|Abhaya Libre' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Dosis|Roboto|Roboto Condensed|Share|Ubuntu|Baumans|Rajdhani|Vidaloka|Abhaya Libre' rel='stylesheet' type='text/css'/>
     
     <meta name="select:Texts font" content="Dosis"/>
     <meta name="select:Texts font" content="Roboto"/>
@@ -62,7 +62,7 @@
     <meta name="select:Texts font" content="Georgia"/>
     <meta name="select:Texts font" content="Times New Roman"/>
     
-    <link href='https://fonts.googleapis.com/css?family=Amatic SC|Patrick Hand|Sue Ellen Francisco|Lobster|Lobster Two|Grand Hotel|Sacramento|Great Vibes|Rouge Script|UnifrakturMaguntia|Astloch|Megrim|Rajdhani|Amatic SC' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Amatic SC|Patrick Hand|Sue Ellen Francisco|Lobster|Lobster Two|Grand Hotel|Sacramento|Great Vibes|Rouge Script|UnifrakturMaguntia|Astloch|Megrim|Rajdhani|Amatic SC' rel='stylesheet' type='text/css'/>
     
     <meta name="select:Titles font" content="Amatic SC"/>
     <meta name="select:Titles font" content="Patrick Hand"/>
@@ -143,8 +143,8 @@
 <!-- jquery -->
 
 <!-- icons -->    
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"/>
 <!-- icons -->
 
 <!-- qtip -->
@@ -177,7 +177,7 @@ $(window).ready(function(){
     {block:IfShowSearchBar}
     $('.search').submit(function(event){
         var value = $('input:first').val();
-        location.assign('http://{Name}.tumblr.com/tagged/' + value);
+        location.replace('http://{Name}.tumblr.com/tagged/' + value);
     });
     {/block:IfShowSearchBar}
     /** search tag script (by shythemes.tumblr.com) **/
@@ -544,7 +544,7 @@ transition: .9s; opacity: {select:Images transparency}; filter: {select:Images e
 .rlbuttons i {color: {color:Boxes}; transition: .5s;}
 .rlbuttons a:hover i {color: {color:Posts Notes};}
 
-.like_button {position: absolute; bottom: 0px; left: 2px; width: 20px; height: 21px; opacity: 0; z-index: 10; border: 1px solid #aca; cursor: pointer;}
+.like_button {position: absolute; bottom: 0px; left: 2px; width: 20px; height: 21px; opacity: 0.000001; z-index: 10; border: 1px solid #aca; cursor: pointer;}
 .like_button iframe { width: 100% !important; height: 100% !important; cursor: pointer;}
 
 .like_button iframe:hover + .olike a {color: {color:Titles} !important;}
@@ -630,6 +630,8 @@ transition: .9s; opacity: {select:Images transparency}; filter: {select:Images e
 #cred:hover {right: 0px;}
 
 /*** DON'T REMOVE THE CREDITS IF THE THEME ISN'T YOURS ***/
+
+
 
 
 </style>
