@@ -1,4 +1,4 @@
-﻿<!--
+<!--
  
  
            THEME #40
@@ -28,8 +28,8 @@
     <meta name="viewport" content="width=device-width"/>
     
     <title> {Title} {block:PostSummary}| {PostSummary}{/block:PostSummary}</title>
-    <link rel="shortcut icon" href="{Favicon}">
-    <link rel="alternate" type="application/rss+xml" href="{RSS}">
+    <link rel="shortcut icon" href="{Favicon}"/>
+    <link rel="alternate" type="application/rss+xml" href="{RSS}"/>
     {block:Description} <meta name="description" content="{MetaDescription}" /> {/block:Description}
 
     <meta name="image:Background" content=""/>
@@ -44,7 +44,7 @@
     <meta name="color:Font" content="#777777"/>
     <meta name="color:Links" content="#73a5a3"/>
     
-    <link href='https://fonts.googleapis.com/css?family=Dosis|Patrick Hand|Roboto|Roboto Condensed|Share|Ubuntu|Baumans|Rajdhani|Iceland|Vidaloka|Abhaya Libre' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Dosis|Patrick Hand|Roboto|Roboto Condensed|Share|Ubuntu|Baumans|Rajdhani|Iceland|Vidaloka|Abhaya Libre' rel='stylesheet' type='text/css'/>
     
     <meta name="select:Texts font" content="Dosis"/>
     <meta name="select:Texts font" content="Patrick Hand"/>
@@ -61,7 +61,7 @@
     <meta name="select:Texts font" content="Georgia"/>
     <meta name="select:Texts font" content="Times New Roman"/>
     
-    <link href='https://fonts.googleapis.com/css?family=Amatic SC|Sue Ellen Francisco|Lobster|Lobster Two|Grand Hotel|Sacramento|Great Vibes|Rouge Script|UnifrakturMaguntia|Astloch|Megrim|Rajdhani|Amatic SC|Special Elite|Black Ops One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Amatic SC|Sue Ellen Francisco|Lobster|Lobster Two|Grand Hotel|Sacramento|Great Vibes|Rouge Script|UnifrakturMaguntia|Astloch|Megrim|Rajdhani|Amatic SC|Special Elite|Black Ops One' rel='stylesheet' type='text/css'/>
     
     <meta name="select:Titles font" content="Amatic SC"/>
     <meta name="select:Titles font" content="Sue Ellen Francisco"/>
@@ -149,8 +149,8 @@
 <!-- jquery -->
 
 <!-- icons -->    
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"/>
 <!-- icons -->
 
 <!-- qtip -->
@@ -183,7 +183,7 @@ $(window).ready(function(){
     {block:IfShowSearchBar}
     $('.search').submit(function(event){
         var value = $('input:first').val();
-        location.assign('http://{Name}.tumblr.com/tagged/' + value);
+        location.replace('http://{Name}.tumblr.com/tagged/' + value);
     });
     {/block:IfShowSearchBar}
     /** search tag script (by shythemes.tumblr.com) **/
@@ -551,7 +551,7 @@ transition: .9s; opacity: {select:Images transparency}; filter: {select:Images e
 
 .like_wrapper {display: inline-block; position: relative;}
 
-.like_button {position: absolute; top: 0px; left: 0px; width: 20px; height: 21px; opacity: 0; z-index: 10; border: 1px solid #aca; cursor: pointer;}
+.like_button {position: absolute; top: 0px; left: 0px; width: 20px; height: 21px; opacity: 0.000001; z-index: 10; border: 1px solid #aca; cursor: pointer;}
 .like_button iframe { width: 100% !important; height: 100% !important; cursor: pointer;}
 
 .like_button iframe:hover + .olike a {color: {color:Titles} !important;}
