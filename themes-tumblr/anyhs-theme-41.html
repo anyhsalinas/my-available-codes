@@ -1,4 +1,4 @@
-﻿<!--
+<!--
  
  
            THEME #41
@@ -193,7 +193,7 @@ $(window).ready(function(){
     {block:IfShowSearchBar}
     $('.search').submit(function(event){
         var value = $('input:first').val();
-        location.assign('http://{Name}.tumblr.com/tagged/' + value);
+        location.replace('http://{Name}.tumblr.com/tagged/' + value);
     });
     {/block:IfShowSearchBar}
     /** search tag script (by shythemes.tumblr.com) **/
@@ -635,7 +635,7 @@ transition: .9s; opacity: {select:Images transparency}; filter: {select:Images e
 
 .like_wrapper {display: inline-block; position: relative;}
 
-.like_button {position: absolute; top: 0px; left: 0px; width: 20px; height: 21px; opacity: 0; z-index: 10; border: 1px solid #aca; cursor: pointer;}
+.like_button {position: absolute; top: 0px; left: 0px; width: 20px; height: 21px; opacity: 0.000001; z-index: 10; border: 1px solid #aca; cursor: pointer;}
 .like_button iframe { width: 100% !important; height: 100% !important; cursor: pointer;}
 
 .like_button iframe:hover + .olike a {color: {color:Font} !important;}
