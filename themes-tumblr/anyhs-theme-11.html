@@ -1,4 +1,4 @@
-﻿<!--
+<!--
  
 			THEME #11
 			by Anyh Salinas - © 2016
@@ -19,8 +19,8 @@
  
 -->
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE>
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
  
@@ -31,9 +31,9 @@
 <!------
     MASONRY SCRIPTS SOURCE: http://creatre.tumblr.com/post/93242735110
 -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
-<script type="text/javascript" src="http://static.tumblr.com/me5sfsd/12Qlmj66n/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://static.tumblr.com/me5sfsd/12Qlmj66n/script.js"></script>
 
 <script type="text/javascript">
 $(window).load(function(){
@@ -325,7 +325,7 @@ table {font-size: 10px;}
 <a href="{text:Link4}"><div class="botao">{text:TituloLink4}</div></a>
 </div>
 
-<center><a href="#first" title="Refresh!" >
+<center><a href="#first" title="Refresh" >
 <div id="cross">
 <div class="xxx"></div>
 <div class="yyy"></div>
@@ -424,7 +424,7 @@ table {font-size: 10px;}
 <div>
 {block:Answer}
 <div class="aask">
-<div class="theasker">{lang:Asker asked 2}:</div>
+<div class="theasker">{Asker} pergunta:</div>
 <br/>
 <small><i>{Question}</i></small>
 <div id="boxinha"><div class="setinha"></div></div></div>
@@ -433,6 +433,7 @@ table {font-size: 10px;}
  
 <div class="captask">{Answer}</div>
  
+<div class="infoask">Respondido dia {DayOfMonth}.{MonthNumberWithZero}.{Year} às {12Hour}:{Minutes}{AmPm}.</div>
 {/block:Answer}
 </div>
 
@@ -451,7 +452,7 @@ table {font-size: 10px;}
 {block:IfNotNotesembranco}{ReblogButton size=15 color=White}{/block:IfNotNotesembranco}
 </div>
 
-<a href="{Permalink}" title="{lang:Notes}"><div class="notb">{NoteCount}</div></a>
+<a href="{Permalink}" title="Notas"><div class="notb">{NoteCount}</div></a>
 </div>
 {/block:IndexPage}
 
@@ -460,17 +461,9 @@ table {font-size: 10px;}
 {block:PermalinkPage}
 <div id="info">
 <center>
-
-<div>
-{lang:Posted on DayOfWeek the DayOfMonthWithSuffix of Month Year at FormattedTime}
-{block:RebloggedFrom}
-<br>
-{lang:Reblogged from ReblogRootName 2} via <a href="{ReblogParentURL}">{ReblogParentName}</a>
-{/block:RebloggedFrom}
-</div>
-
+<div>Postado dia {DayOfMonth}.{MonthNumberWithZero}.{Year} às {24Hour}:{Minutes}. {block:RebloggedFrom}Via <a href="{ReblogParentURL}">{ReblogParentName}</a> por <a href="{ReblogRootURL}">{ReblogRootName}</a>{/block:RebloggedFrom}.</div>
 <div>{block:HasTags}{block:Tags}#<a href="{TagURL}">{Tag}</a> {/block:Tags}{/block:HasTags}</a></div>
-{block:ContentSource}<a href="{SourceURL}" target="_blank"><b>{lang:Source}</b></a>{/block:ContentSource}
+{block:ContentSource}<a href="{SourceURL}" target="_blank"><b>ORIGINAL</b></a>{/block:ContentSource}
 </center>
  
 {block:PostNotes}{PostNotes}{/block:PostNotes}
