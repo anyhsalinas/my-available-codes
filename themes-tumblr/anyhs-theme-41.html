@@ -393,6 +393,8 @@ ol {margin-left: -20px; list-style: decimal-leading-zero;}
 blockquote {border: none; border-left: 3px solid {color:Titles}; margin: 10px 20px; background: {color:Background}; padding: 5px 10px; overflow: hidden;}
 blockquote img {height: auto; width: 100%;}
 
+img, figure {margin: 0px auto; display: table;}
+
 hr {border: none; border-top: 1px solid {color:Font}; margin: 20px 20px; opacity: .3;}
 
 pre {background: {color:Background}; overflow-x: scroll; padding: 10px; border: 1px solid {color:Borders};}
@@ -776,11 +778,13 @@ transition: .9s; opacity: {select:Images transparency}; filter: {select:Images e
 <!-------------------- SIDEBAR STARTS -------------------->
 <aside id="sidebar" class="no_sticky">
 
+{block:IfSidebarImage}
 <a href="/">
 <div id="side_img">
 <img src="{image:Sidebar}"/>
 </div>
 </a>
+{/block:IfSidebarImage}
 
 <a href="/">
 <h1>{Title}</h1>
