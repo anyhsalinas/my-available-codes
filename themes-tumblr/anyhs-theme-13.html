@@ -3,6 +3,7 @@
 			THEME #13
 			by Anyh Salinas - © 2016
 			www.anyhs-themes.tumblr.com
+			(last update: 21/05/2021 08:27hrs)
  
  
  
@@ -590,7 +591,7 @@ ul {margin: 0px 0px 10px -20px;}
 
 <div class="ask">
 <a href="{AskerURL}" target="_blank" title="{AskerName}"><img src="{AskerPortraitURL-64}" /></a>
-<span>{Asker} perguntou:</span>
+<span>{lang:Asker asked 2}:</span>
 
 <div class="box">{Question}</div>
 </div> <!-- .ask -->
@@ -599,7 +600,7 @@ ul {margin: 0px 0px 10px -20px;}
 {block:Answerer}
 <div class="answer">
 <a href="{AnswererURL}" target="_blank" title="{AnswererName}"> <img src="{AnswererPortraitURL-64}" /> </a>
-<span>{Answerer} respondeu:</span>
+<span>{lang:Answered}:</span>
 
 <div class="box">{Answer}</div>
 </div> <!-- .answer -->
@@ -630,22 +631,25 @@ ul {margin: 0px 0px 10px -20px;}
 
 <h2>Info:</h2>
 
-Postado dia {DayOfMonth}.{MonthNumberWithZero}.{Year} às {24Hour}:{Minutes}, com {NoteCount} notas
+{lang:Posted on DayOfWeek Month DayOfMonth Year}, {12Hour}:{Minutes}{AmPm}
+<br/>
+{lang:This post has NoteCount notes}
 
 {block:ContentSource}
 <br/>
-Fonte: <a href="{SourceURL}" target="_blank">{SourceTitle}</a>
+{lang:Source}: <a href="{SourceURL}" target="_blank">{SourceTitle}</a>
 {/block:ContentSource}
  
 {block:RebloggedFrom}
 <br/>
-Via <a href="{ReblogParentURL}" target="_blank">{ReblogParentName}</a>,
-por <a href="{ReblogRootURL}" target="_blank">{ReblogRootName}</a>
+{lang:Reblogged from ReblogParentName 2}
+<br/>
+{lang:Originally from ReblogRootName 2}
 {/block:RebloggedFrom}
  
 {block:HasTags}
 <br/>
-Tags: {block:Tags}#<a href="{TagURL}">{Tag}</a> {/block:Tags}
+{lang:Tagged With}: {block:Tags}#<a href="{TagURL}">{Tag}</a> {/block:Tags}
 {/block:HasTags}
  
  
